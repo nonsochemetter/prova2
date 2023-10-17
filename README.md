@@ -20,6 +20,9 @@
             text-align: center;
         }
         nav {
+            position: absolute;
+            top: 10px;
+            right: 10px;
             background-color: #444;
             padding: 10px;
         }
@@ -52,14 +55,36 @@
             opacity: 0.12;
         }
         .carousel-item img {
-    width: 100%;
-    height: 70%; 
-    object-fit: cover; 
+            width: 100%;
+            height: 70%; 
+            object-fit: cover; 
+        }
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            color: #fff;
+        }
 
+        .carousel-caption h3 {
+            font-size: 2em; 
+        }
+
+        .carousel-caption p {
+            font-size: 1.2em;
+        }
+        .carousel-inner {
+    margin-top: 45px; 
+}
     </style>
 </head>
 <body>
     <header>
+        
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -68,7 +93,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="biscotti-al-burro.jpg" alt="biscotti confezionati">
+                    <img src="Biscotti meringati al cioccolato.jpg" alt="biscotti confezionati">
                     <div class="carousel-caption">
                         <h3>Biscotti Confezionati</h3>
                         <p>Descrizione dei biscotti confezionati</p>
@@ -100,7 +125,6 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        
     </header>    
     <nav>
         <a href="home.html">Home</a>
