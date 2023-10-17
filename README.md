@@ -53,9 +53,8 @@
         }
         .carousel-item img {
     width: 100%;
-    height: 70%; /* Imposta l'altezza al 100% dell'elemento padre */
-    object-fit: cover; /* Copre completamente l'area senza distorcere l'immagine */
-}
+    height: 70%; 
+    object-fit: cover; 
 
     </style>
 </head>
