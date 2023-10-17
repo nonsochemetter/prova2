@@ -34,7 +34,7 @@
         }
         .dimensioni-immagine {
             width: 300px;
-            height: auto;
+            height: 600px;
             margin-top: 30px; 
             margin-left: -1130px;
         }
@@ -47,24 +47,19 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('sfondo.jpg');
             background-size: cover;
             pointer-events: none;
             opacity: 0.12;
         }
-        .immagini {
-            display: flex;
-        }
-        .dimensioni-immagine {
-            width: 300px;
-            height: auto;
-            margin-top: 30px;
-            margin-left: 300px;
-        }
+        .carousel-item img {
+    width: 100%;
+    height: 70%; /* Imposta l'altezza al 100% dell'elemento padre */
+    object-fit: cover; /* Copre completamente l'area senza distorcere l'immagine */
+}
+
     </style>
 </head>
 <body>
-    <div class="background-image" id="backgroundImage"></div>
     <header>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -74,15 +69,27 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="emesso.jpg" alt="biscotti confezionati" class="dimensioni-immagine">
+                    <img src="biscotti-al-burro.jpg" alt="biscotti confezionati">
+                    <div class="carousel-caption">
+                        <h3>Biscotti Confezionati</h3>
+                        <p>Descrizione dei biscotti confezionati</p>
+                    </div>
                 </div>
-
+        
                 <div class="carousel-item">
-                    <img src="preferiti.jpg" alt="biscotti artigianali" class="dimensioni-immagine">
+                    <img src="preferiti.jpg" alt="biscotti artigianali">
+                    <div class="carousel-caption">
+                        <h3>Biscotti Artigianali</h3>
+                        <p>Descrizione dei biscotti artigianali</p>
+                    </div>
                 </div>
-
+        
                 <div class="carousel-item">
-                    <img src="sfondo.jpg" alt="biscotti fuori produzione" class="dimensioni-immagine">
+                    <img src="sfondo.jpg" alt="biscotti fuori produzione">
+                    <div class="carousel-caption">
+                        <h3>Biscotti Fuori Produzione</h3>
+                        <p>Descrizione dei biscotti fuori produzione</p>
+                    </div>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -94,7 +101,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <h1>Biscotti artigianali</h1>
+        
     </header>    
     <nav>
         <a href="home.html">Home</a>
@@ -112,5 +119,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#myCarousel').carousel({
+                interval: 8000000
+            });
+        });
+    </script>
 </body>
 </html>
