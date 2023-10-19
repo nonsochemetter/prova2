@@ -8,51 +8,34 @@
     <title>Biscotteria Pinocchio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
         header, footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #fffdfd;
+            color: #000000;
             padding: 10px;
-            text-align: center;
-        }
-        nav {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: #444;
-            padding: 10px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
+            text-align: left;
+            font-size: 12px;
         }
         main {
             padding: 20px;
             margin-left: 50px; 
-        }
-        .dimensioni-immagine {
-            width: 300px;
-            height: 600px;
-            margin-top: 30px; 
-            margin-left: -1130px;
-        }
-        header h1 {
-            margin-left: -1150px;
+            color: #911515;
+
         }
         .background-image {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            pointer-events: none;
-            opacity: 0.12;
+    top: 10px; 
+    left: 10px;
+    width: 90%; 
+    height: 90%;
+    background-size: cover;
+    pointer-events: none;
+    opacity: 0.12;
         }
         .carousel-item img {
             width: 100%;
@@ -81,9 +64,13 @@
     margin-top: 45px; 
 }
     </style>
+    
 </head>
 <body>
+    
+    
     <header>
+        
         
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -91,9 +78,10 @@
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
+            
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="Biscotti meringati al cioccolato.jpg" alt="biscotti confezionati">
+                    <img src="preferiti.jpg" alt="biscotti confezionati">
                     <div class="carousel-caption">
                         <h3>Biscotti Confezionati</h3>
                         <p>Descrizione dei biscotti confezionati</p>
@@ -101,7 +89,7 @@
                 </div>
         
                 <div class="carousel-item">
-                    <img src="preferiti.jpg" alt="biscotti artigianali">
+                    <img src="Biscotti meringati al cioccolato.jpg" alt="biscotti artigianali">
                     <div class="carousel-caption">
                         <h3>Biscotti Artigianali</h3>
                         <p>Descrizione dei biscotti artigianali</p>
@@ -126,17 +114,17 @@
             </a>
         </div>
     </header>    
-    <nav>
-        <a href="home.html">Home</a>
-        <a href="servizi.html">Servizi</a>
-        <a href="contatti.html">Contatti</a>
-    </nav>
     <main>
+        
         <h2>come mangiare i biscotti</h2>
         <p>salve qui vi spiegherò come si mangiano i biscotti</p>
     </main>
     <footer>
-        <p>...---...</p>
+        <p>Biscotteria Pinocchio - miglior biscotteria al mondo </p>
+       <p> Via San Lorenzo 120 Mantova</p> 
+        <p>Telefono: xxx-xxx-xxxx</p>
+        <p>Mail XXXXXXXXX.com</p>
+        <p>Fax XXX-XXX-XXXX</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -145,7 +133,7 @@
     <script>
         $(document).ready(function(){
             $('#myCarousel').carousel({
-                interval: 8000000
+                interval: 5000
             });
         });
     </script>
