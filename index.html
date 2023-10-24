@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+    
     <link rel="icon" href="logo3.ico.ico" type="image/x-icon">
 
     <meta charset="UTF-8">
@@ -8,6 +9,23 @@
     <title>Biscotteria Pinocchio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
+
+        #myElement {
+  position: absolute;
+  right: 100px;
+  transform: translate(-50%, -50%);
+  background: rgba(81, 9, 9, 0.8);
+  padding: 50px;
+}
+
+.btn-collapse {
+  margin-top: 100px;
+}
+button {
+    position: absolute;
+  right: 100px;
+}
+
         
         body {
             font-family: Arial, sans-serif;
@@ -63,15 +81,23 @@
         .carousel-inner {
     margin-top: 45px; 
 }
+
+
     </style>
-    
+
 </head>
 <body>
-    
-    
-    <header>
+        <header>
 
-        
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#myElement" aria-expanded="false" aria-controls="myElement">
+                prenotazioni
+                
+              </button>
+          
+              <div id="myElement" class="collapse">
+                prenota
+              </div>
+
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -131,9 +157,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script>
+        
         $(document).ready(function(){
             $('#myCarousel').carousel({
-                interval: 500
+                interval: 5000
             });
         });
     </script>
