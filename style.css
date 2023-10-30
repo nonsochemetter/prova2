@@ -1,0 +1,92 @@
+#myElement {
+  position: absolute;
+  right: 100px;
+  transform: translate(-50%, -50%);
+  background: rgba(24, 20, 20, 0.8);
+  padding: 50px;
+}
+
+.btn-collapse {
+  margin-top: 100px;
+}
+button {
+  position: absolute;
+  right: 100px;
+  position: fixed;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header,
+footer {
+  background-color: #fffdfd;
+  color: #000000;
+  padding: 10px;
+  text-align: left;
+  font-size: 12px;
+}
+main {
+  padding: 20px;
+  margin-left: 50px;
+  color: #9c9999;
+}
+.background-image {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 90%;
+  height: 90%;
+  background-size: cover;
+  pointer-events: none;
+  opacity: 0.12;
+}
+.carousel-item img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: #fff;
+}
+
+.carousel-caption h3 {
+  font-size: 2em;
+}
+
+.carousel-caption p {
+  font-size: 1.2em;
+}
+.carousel-inner {
+  margin-top: 45px;
+}
+
+/* TODO Aggiungere le media queries */
+/*TODO in versione mobile modificare la scritta "PRENOTAZIONI" con l'icona di un hanburger menu*/
+
+
+/*position: absolute;
+    right: 0;
+    background: rgba(24, 20, 20, 0.8);
+    padding: 50px;
+    top: 64px;
+    z-index: 99;
+    left: 0;
+    color: white;
+    width: 100%;
+*/
+
+@media (max-width: 576px) {
+    .carousel-caption  {
+      
+    }
+  }
